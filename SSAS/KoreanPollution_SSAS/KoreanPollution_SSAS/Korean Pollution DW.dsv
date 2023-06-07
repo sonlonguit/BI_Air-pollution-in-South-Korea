@@ -1,0 +1,126 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ea65e4c1-d53f-4de6-ab1a-4efcf7f8cf86" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Korean Pollution DW</ID>
+  <Name>Korean Pollution DW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Korean Pollution DW</DataSourceID>
+  <Schema>
+    <xs:schema id="Korean_x0020_Pollution_x0020_DW" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Korean_x0020_Pollution_x0020_DW" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="4e4eb9f9-ab6a-4f36-b1e7-e8a8cbe520ec">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Fact_Pollution" msprop:design-time-name="f5b2623e-1de1-487c-872b-480da597bc5d" msprop:DbTableName="Fact_Pollution" msprop:FriendlyName="Fact_Pollution" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msprop:design-time-name="ce0527b7-4b4c-43ff-8f44-3cb4dc91b8e1" msprop:DbColumnName="id" msprop:FriendlyName="id" type="xs:int" />
+                  <xs:element name="pm25" msprop:design-time-name="f4b349a3-1e77-4757-8a0a-a6bfacd064b9" msprop:DbColumnName="pm25" msprop:FriendlyName="pm25" type="xs:int" minOccurs="0" />
+                  <xs:element name="pm10" msprop:design-time-name="72c58ad1-1394-450a-9c53-da22cb644705" msprop:DbColumnName="pm10" msprop:FriendlyName="pm10" type="xs:int" minOccurs="0" />
+                  <xs:element name="o3" msprop:design-time-name="77ae116f-c96c-4270-a8fa-9f1d7d308a99" msprop:DbColumnName="o3" msprop:FriendlyName="o3" type="xs:int" minOccurs="0" />
+                  <xs:element name="no2" msprop:design-time-name="50e1aff4-b020-4df7-83e8-c2830f786c75" msprop:DbColumnName="no2" msprop:FriendlyName="no2" type="xs:int" minOccurs="0" />
+                  <xs:element name="so2" msprop:design-time-name="da7d6083-5ec3-4e59-8c43-eabf6005d712" msprop:DbColumnName="so2" msprop:FriendlyName="so2" type="xs:int" minOccurs="0" />
+                  <xs:element name="co" msprop:design-time-name="f586a9fd-9d2b-4904-80fc-25657009a82f" msprop:DbColumnName="co" msprop:FriendlyName="co" type="xs:int" minOccurs="0" />
+                  <xs:element name="Location_id" msprop:design-time-name="f56c52d0-7988-4d7a-aaff-42053ff0d5ca" msprop:DbColumnName="Location_id" msprop:FriendlyName="Location_id" type="xs:int" minOccurs="0" />
+                  <xs:element name="Date_id" msprop:design-time-name="d45e0953-c655-4406-babf-d71d28045ee5" msprop:DbColumnName="Date_id" msprop:FriendlyName="Date_id" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Location" msprop:design-time-name="12b0a0ba-6a36-43cb-b72d-31aed7010a45" msprop:DbTableName="Dim_Location" msprop:FriendlyName="Dim_Location" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Location_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="9ec524ea-f2d5-4018-a4ce-6ec9cb45d581" msprop:DbColumnName="Location_id" msprop:FriendlyName="Location_id" type="xs:int" />
+                  <xs:element name="City" msprop:design-time-name="58c1b6cd-e798-4313-a68e-a22a02fbbf73" msprop:DbColumnName="City" msprop:FriendlyName="City" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="District" msprop:design-time-name="af5465df-ae0f-423b-95f1-f6f8cd4f4590" msprop:DbColumnName="District" msprop:FriendlyName="District" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Country" msprop:design-time-name="1c75d70f-dcb7-400d-8c60-da8ff78ec4d2" msprop:DbColumnName="Country" msprop:FriendlyName="Country" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Date" msprop:design-time-name="ac76b18b-be89-4727-aaaf-0b183e64f38a" msprop:DbTableName="Dim_Date" msprop:FriendlyName="Dim_Date" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Date_id" msprop:design-time-name="b6e02d29-c5c6-486e-a831-e0759702079b" msprop:DbColumnName="Date_id" msprop:FriendlyName="Date_id" type="xs:dateTime" />
+                  <xs:element name="Month" msprop:design-time-name="797bd915-84e6-43ab-8096-22c46b28bc69" msprop:DbColumnName="Month" msprop:FriendlyName="Month" type="xs:int" minOccurs="0" />
+                  <xs:element name="Year" msprop:design-time-name="f6814b0d-b6b6-45e6-ada9-1d5f569a2edc" msprop:DbColumnName="Year" msprop:FriendlyName="Year" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Fact_Pollution" />
+          <xs:field xpath="id" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Location_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Location" />
+          <xs:field xpath="Location_id" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Date_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Date" />
+          <xs:field xpath="Date_id" />
+        </xs:unique>
+        <xs:keyref name="fk_fact_date" refer="dbo_Dim_Date_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_Pollution" />
+          <xs:field xpath="Date_id" />
+        </xs:keyref>
+        <xs:keyref name="fk_fact_location" refer="dbo_Dim_Location_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_Pollution" />
+          <xs:field xpath="Location_id" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Korean_x0020_Pollution_x0020_DW xmlns="" />
+  </Schema>
+</DataSourceView>

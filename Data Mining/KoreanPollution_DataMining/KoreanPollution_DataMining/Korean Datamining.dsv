@@ -1,0 +1,91 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ee509571-1786-42b8-9cb2-55702a57171e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Korean Datamining</ID>
+  <Name>Korean Datamining</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Korean Datamining</DataSourceID>
+  <Schema>
+    <xs:schema id="Korean_x0020_Datamining" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Korean_x0020_Datamining" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="7dc05ee2-3037-49f0-b50a-1c548b119522">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo__x0027_south-korean-pollution-data-new_x0024__x0027_" msprop:design-time-name="49ad62d2-3a5d-4ea9-bd7b-5260c3ff0b5b" msprop:DbTableName="'south-korean-pollution-data-new$'" msprop:FriendlyName="'south-korean-pollution-data-new$'" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msprop:design-time-name="4dbf4fc5-1a20-4f46-b314-9f58653ce99d" msprop:DbColumnName="id" msprop:FriendlyName="id" type="xs:double" minOccurs="0" />
+                  <xs:element name="date" msprop:design-time-name="11afa9d7-f1a3-422d-a290-43c86090c7cc" msprop:DbColumnName="date" msprop:FriendlyName="date" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="pm25" msprop:design-time-name="d3d20526-1f81-4d12-b71f-3c855864e729" msprop:DbColumnName="pm25" msprop:FriendlyName="pm25" type="xs:double" minOccurs="0" />
+                  <xs:element name="pm10" msprop:design-time-name="c8b0f79d-2c7a-4075-8a20-a965c7880c9e" msprop:DbColumnName="pm10" msprop:FriendlyName="pm10" type="xs:double" minOccurs="0" />
+                  <xs:element name="o3" msprop:design-time-name="64788a89-532e-4dab-8f5c-1204a7dbd7e3" msprop:DbColumnName="o3" msprop:FriendlyName="o3" type="xs:double" minOccurs="0" />
+                  <xs:element name="no2" msprop:design-time-name="26a7f845-28ca-43a9-b999-2c7b5f01193d" msprop:DbColumnName="no2" msprop:FriendlyName="no2" type="xs:double" minOccurs="0" />
+                  <xs:element name="so2" msprop:design-time-name="7a5ae34f-10ff-4f19-b44d-80c05495afe1" msprop:DbColumnName="so2" msprop:FriendlyName="so2" type="xs:double" minOccurs="0" />
+                  <xs:element name="co" msprop:design-time-name="ce829611-2952-449d-8861-75d4f666b909" msprop:DbColumnName="co" msprop:FriendlyName="co" type="xs:double" minOccurs="0" />
+                  <xs:element name="Lat" msprop:design-time-name="2731803d-7349-4ab2-a314-db602ec4f46a" msprop:DbColumnName="Lat" msprop:FriendlyName="Lat" type="xs:double" minOccurs="0" />
+                  <xs:element name="Long" msprop:design-time-name="f9dc7e8a-9d71-4350-9ddc-bcaf2ea50044" msprop:DbColumnName="Long" msprop:FriendlyName="Long" type="xs:double" minOccurs="0" />
+                  <xs:element name="City" msprop:design-time-name="50a97ffd-e56f-477f-b73c-0ff1ef25b435" msprop:DbColumnName="City" msprop:FriendlyName="City" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="District" msprop:design-time-name="b0f28f32-d604-400d-945b-7c953b481948" msprop:DbColumnName="District" msprop:FriendlyName="District" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Country" msprop:design-time-name="f54f0bba-f2ac-4c46-bf4d-7e14b48e3519" msprop:DbColumnName="Country" msprop:FriendlyName="Country" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <Korean_x0020_Datamining xmlns="" />
+  </Schema>
+</DataSourceView>

@@ -1,0 +1,67 @@
+NT Service\MSSQLServerOLAPService
+
+
+
+
+CREATE TABLE [Null_Database] (
+    [id] int,
+    [date] date,
+    [pm25] int,
+    [pm10] int,
+    [o3] int,
+    [no2] int,
+    [so2] int,
+    [co] int,
+    [City] nvarchar(50),
+    [District] nvarchar(50),
+    [Country] nvarchar(50),
+    Constraint pk_NullData primary key (id)
+)
+
+CREATE TABLE [Clean_Data] (
+    [id] int,
+    [date] date,
+    [pm25] int,
+    [pm10] int,
+    [o3] int,
+    [no2] int,
+    [so2] int,
+    [co] int,
+    [City] nvarchar(50),
+    [District] nvarchar(50),
+    [Country] nvarchar(50),
+    Constraint pk_CleanData primary key (id)
+)
+
+CREATE TABLE [Dim_Location] (
+    [Location_id] int identity(1,1),
+    [City] nvarchar(50),
+    [District] nvarchar(50),
+    [Country] nvarchar(50),
+    Constraint pk_Dim_Location primary key (Location_id)
+)
+
+
+CREATE TABLE [Dim_Date] (
+    [Date_id] date,
+    [Month] int,
+    [Year] int,
+    Constraint pk_Dim_Date primary key (Date_id)
+)
+
+CREATE TABLE [Fact_Pollution] (
+    [id] int,
+    [pm25] int,
+    [pm10] int,
+    [o3] int,
+    [no2] int,
+    [so2] int,
+    [co] int,
+    [Location_id] int,
+    [Date_id] date,
+    Constraint pk_fact primary key (id)
+)
+
+Alter table Fact_Pollution  Add Constraint fk_fact_date Foreign key (Date_id) References Dim_Date (Date_id)
+
+Alter table Fact_Pollution  Add Constraint fk_fact_location Foreign key (Location_id) References Dim_Location (Location_id)
